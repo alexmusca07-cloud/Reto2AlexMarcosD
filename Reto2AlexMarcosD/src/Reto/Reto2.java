@@ -9,7 +9,7 @@ import Reto.Funciones;
 public class Reto2 {
 
 	public static void main(String[] args) {
-		
+
 		/*
 		 * El programa debe mostrar un menú para que el usuario elija la operación que
 		 * desea realizar y después otro menú para elegir que quiere hacer, después se
@@ -17,7 +17,7 @@ public class Reto2 {
 		 * realizar la operación, debe volver al menú 2. Para volver al menú principal
 		 * lo hará con la opción 0.
 		 */
-		
+
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Selecciona el tipo de conversion: ");
@@ -26,48 +26,25 @@ public class Reto2 {
 		System.out.println("3. Temperatura");
 		System.out.println("4. Volumen");
 		System.out.println("0. Salir");
-		
+
 		int opcion = 0;
-		int opcionl = 0;
-		
-		
-		
 		do {
 			opcion = Funciones.dimeEntero("Dime una opcion", sc);
 			switch (opcion) {
 			case 1:
-				do {
-					System.out.println("Selecciona a la conversión de longitud:");
-					System.out.println("1. Millas a kilómetros");
-					System.out.println("2. Kilómetros a millas");
-					System.out.println("0. Salir");
-				} while (opcionl != 0);
-			double n1 = (opcion);
-			System.out.println(n1);
-			break;
+				Funciones1.menuLongitud(sc);
+				break;
 			case 2:
-				do {
-					System.out.println("Selecciona a la conversión de longitud:");
-					System.out.println("1. Millas a kilómetros");
-					System.out.println("2. Kilómetros a millas");
-					System.out.println("0. Salir");
-				} while (opcionl != 0);
-			double n2 = (opcion);
-			System.out.println(n2);
-			break;
+				Funciones1.menuPeso(sc);
+				break;
 			case 3:
-				do {
-					System.out.println("Selecciona a la conversión de longitud:");
-					System.out.println("1. Millas a kilómetros");
-					System.out.println("2. Kilómetros a millas");
-					System.out.println("0. Salir");
-				} while (opcionl != 0);
-			double n3 = (opcion);
-			System.out.println(n3);
-			break;
-		default:
-			
-			break;
+				Funciones2.menuTemperatura(sc);
+				break;
+			case 4:
+				Funciones2.menuVolumen(sc);
+				break;
+			default:
+				break;
 			}
 		} while (opcion != 0);
 	}
