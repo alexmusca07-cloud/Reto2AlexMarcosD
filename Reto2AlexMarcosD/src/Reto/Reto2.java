@@ -29,10 +29,11 @@ public class Reto2 {
 			System.out.println(n1);
 			break;
 		default:
-			System.out.println("0. Salir");
+			
 			break;
 			}
 		} while (opcion != 0);
+		System.out.println("0. Salir");
 	}
 
 }
