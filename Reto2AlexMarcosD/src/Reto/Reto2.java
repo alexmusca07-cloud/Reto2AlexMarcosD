@@ -19,12 +19,6 @@ public class Reto2 {
 		 */
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Selecciona el tipo de conversion: ");
-		System.out.println("1. Longitud");
-		System.out.println("2. Peso");
-		System.out.println("3. Temperatura");
-		System.out.println("4. Volumen");
-		System.out.println("0. Salir");
 
 		int opcion = 0;
 		do {
@@ -50,6 +44,8 @@ public class Reto2 {
 				Funciones2.menuVolumen(sc);
 				break;
 			default:
+			case 0:
+				System.out.println("Fin");
 				break;
 			}
 		} while (opcion != 0);

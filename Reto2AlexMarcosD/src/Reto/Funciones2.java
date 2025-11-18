@@ -37,6 +37,7 @@ public class Funciones2 {
 				n2 = Funciones.dimeDouble("Dime el valor para pasarlo a Celsius", sc);
 				System.out.println(Funciones2.FahrenheitCelsius(n2));
 			default:
+			case 0:
 				break;
 			}
 		} while (opcion != 0);
@@ -60,6 +61,7 @@ public class Funciones2 {
 				n2 = Funciones.dimeDouble("Dime el valor para pasarlo a Litros", sc);
 				System.out.println(Funciones2.GalonesLitros(n2));
 			default:
+			case 0:
 				break;
 			}
 		} while (opcion != 0);
