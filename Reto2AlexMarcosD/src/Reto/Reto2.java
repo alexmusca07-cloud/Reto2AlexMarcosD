@@ -45,6 +45,26 @@ public class Reto2 {
 			double n1 = (opcion);
 			System.out.println(n1);
 			break;
+			case 2:
+				do {
+					System.out.println("Selecciona a la conversión de longitud:");
+					System.out.println("1. Millas a kilómetros");
+					System.out.println("2. Kilómetros a millas");
+					System.out.println("0. Salir");
+				} while (opcionl != 0);
+			double n2 = (opcion);
+			System.out.println(n2);
+			break;
+			case 3:
+				do {
+					System.out.println("Selecciona a la conversión de longitud:");
+					System.out.println("1. Millas a kilómetros");
+					System.out.println("2. Kilómetros a millas");
+					System.out.println("0. Salir");
+				} while (opcionl != 0);
+			double n3 = (opcion);
+			System.out.println(n3);
+			break;
 		default:
 			
 			break;
