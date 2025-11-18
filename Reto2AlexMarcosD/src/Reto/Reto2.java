@@ -44,7 +44,6 @@ public class Reto2 {
 				Funciones2.menuVolumen(sc);
 				break;
 			default:
-			case 0:
 				System.out.println("Fin");
 				break;
 			}

@@ -62,7 +62,6 @@ public class Funciones1 {
 				n2 = Funciones.dimeDouble("Dime el valor para pasarlo a Kilos", sc);
 				System.out.println(Funciones1.LibrasKilos(n2));
 			default:
-			case 0:
 				break;
 			}
 		} while (opcion != 0);
