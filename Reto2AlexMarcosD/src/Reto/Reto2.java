@@ -28,13 +28,14 @@ public class Reto2 {
 
 		int opcion = 0;
 		do {
-			opcion = Funciones.dimeEntero("Dime una opcion", sc);
 			System.out.println("Selecciona el tipo de conversion: ");
 			System.out.println("1. Longitud");
 			System.out.println("2. Peso");
 			System.out.println("3. Temperatura");
 			System.out.println("4. Volumen");
 			System.out.println("0. Salir");
+			opcion = Funciones.dimeEntero("Dime una opcion", sc);
+			
 			switch (opcion) {
 			case 1:
 				Funciones1.menuLongitud(sc);
